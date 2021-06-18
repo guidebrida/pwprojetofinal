@@ -1,0 +1,138 @@
+body{
+    background-color:rgb(112, 69, 212);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+header{
+    background-color:rgb(112, 69, 212);
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    height: 10vh;
+    margin: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#containerFomrulario{
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+p{
+    margin: 0px;
+    margin-left: 8px;
+    font-size: 15px;
+}
+section{
+    background-color: violet;
+    display: flex;
+    height: 50vh;
+    width: 160vh;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    background-color: yellow;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+#Formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+#name{
+    margin: 5px;
+    height: 4vh;
+    width: 40vh;
+}
+#password{
+    margin: 5px;
+    height: 4vh;
+    width: 40vh;
+}
+#Botao{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color:rgb(112, 69, 212);
+    color: white;
+    border-radius: 7px;
+    margin-left: 15px;
+    height: 5vh;
+    width: 20vh;
+    justify-content: center;
+    text-align: center;
+}
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 5px;
+    height: 7vh;
+    width: 160vh;
+    background-color: wheat;
+}
+#lista{
+    width: 160vh;
+}
+#divpai{
+    background-color: black;
+    display: flex;
+    font-size: 15px;
+}
+#div1{
+    background-color: white;
+    width: 76vh;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+}
+#div2{
+    background-color: white;
+    width: 77vh;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+}
+#div3{
+    background-color: white;
+    width: 8vh;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color:rgb(112, 69, 212);;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    height: 10vh;
+    margin: 0px;
+}
+span{
+    width: 73vh;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 5vh;
+    height: 5vh;
+    border: 0px;
+}
