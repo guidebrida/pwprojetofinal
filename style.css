@@ -1,5 +1,6 @@
 body{
-    background-color:rgb(112, 69, 212);
+    background: linear-gradient(45deg, #02475E, #687980, #F3BDA1, #FEFECC);
+    background-size: 250%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,13 +9,29 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
 header{
-    background-color:rgb(112, 69, 212);
+    display: flex;
     text-align: center;
+    justify-content: center;
     color: white;
-    flex-wrap: wrap;
-    height: 10vh;
+    height: 20vh;
     margin: 0px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main{
     display: flex;
@@ -25,29 +42,20 @@ main{
     justify-content: space-evenly;
 }
 #containerFomrulario{
-    background-color: white;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    color: white;
 }
 p{
     margin: 0px;
     margin-left: 8px;
     font-size: 15px;
 }
-section{
-    background-color: violet;
-    display: flex;
-    height: 50vh;
-    width: 160vh;
-    margin: 0px;
-    padding: 0px;
-}
 ul{
-    background-color: yellow;
     padding-left: 0px;
     margin-top: 10px;
 }
@@ -61,17 +69,27 @@ ul{
 #name{
     margin: 5px;
     height: 4vh;
-    width: 40vh;
+    width: 30vh;
 }
-#password{
+#data{
     margin: 5px;
     height: 4vh;
-    width: 40vh;
+    width: 20vh;
+}
+#cpf{
+    margin: 5px;
+    height: 4vh;
+    width: 30vh;
+}
+#email{
+    margin: 5px;
+    height: 4vh;
+    width: 30vh;
 }
 #Botao{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-    background-color:rgb(112, 69, 212);
+    background-color:#02475E;
     color: white;
     border-radius: 7px;
     margin-left: 15px;
@@ -81,45 +99,65 @@ ul{
     text-align: center;
 }
 li{
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0px;
+    margin-right: 0px;
     margin-bottom: 5px;
-    height: 7vh;
-    width: 160vh;
-    background-color: wheat;
+    height: 10vh;
+    width: 190vh;
+}
+section{
+    height: 40vh;
+    width: 192vh;
+    overflow: auto;
 }
 #lista{
-    width: 160vh;
+    width: 190vh;
 }
 #divpai{
+    width: 192vh;
     background-color: black;
     display: flex;
     font-size: 15px;
 }
 #div1{
     background-color: white;
-    width: 76vh;
+    width: 45vh;
     margin-right: 1px;
     display: flex;
     justify-content: center;
 }
 #div2{
     background-color: white;
-    width: 77vh;
+    width: 45vh;
     margin-right: 1px;
     display: flex;
     justify-content: center;
 }
 #div3{
     background-color: white;
-    width: 8vh;
+    width: 46vh;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+}
+#div4{
+    background-color: white;
+    width: 45vh;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+}
+#div5{
+    background-color: white;
+    width: 12vh;
     display: flex;
     justify-content: center;
 }
 footer{
-    background-color:rgb(112, 69, 212);;
     text-align: center;
     color: white;
     flex-wrap: wrap;
@@ -132,7 +170,12 @@ span{
     justify-content: center;
 }
 button{
+    margin-left: 10px;
+    margin-right: 10px;
     width: 5vh;
     height: 5vh;
     border: 0px;
+}
+#delete{
+    background-color: brown;
 }
