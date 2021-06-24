@@ -3,18 +3,18 @@ let listaPessoas = []
 let ul = document.querySelector("#listaCadastro") 
 let form = document.querySelector("#Formulario") 
 let inputName = document.querySelector("#name")
-let inputData = document.querySelector("#data")
-let inputCpf = document.querySelector("#cpf")
-let inputEmail = document.querySelector("#email")
+let inputImg = document.querySelector("#img")
+let inputTitulos = document.querySelector("#Titulos")
+let inputJogador = document.querySelector("#Jogador")
 form.addEventListener('submit', cadastro) 
 
 function cadastro(evento) {
     evento.preventDefault() 
     let pessoas = {
         'name': inputName.value,
-        'data': inputData.value,
-        'cpf' : inputCpf.value,
-        'email': inputEmail.value
+        'img': inputImg.value,
+        'Titulos' : inputTitulos.value,
+        'Jogador': inputJogador.value
     }
     let texto = JSON.stringify(pessoas)
     const opcoes = { 
@@ -45,25 +45,28 @@ function imprimelistaPessoas() {
     ul.textContent = ""
     for (let pessoas of listaPessoas) { 
         let li = document.createElement('li')
+
+        let img = document.createElement('img')
+        img.src = pessoas.img
+        li.appendChild(img)
         
-        let nome = document.createElement('span')
+        let nome = document.createElement('div')
         nome.textContent = pessoas.name
         li.appendChild(nome)
+        nome.id = "Nome"
 
-        let data = document.createElement('span')
-        data.textContent = pessoas.data
-        li.appendChild(data)
+        let titulos = document.createElement('div')
+        titulos.textContent = pessoas.Titulos
+        li.appendChild(titulos)
+        titulos.id = "titulos"
 
-        let cpf = document.createElement('span')
-        cpf.textContent = pessoas.cpf
-        li.appendChild(cpf)
-
-        let email = document.createElement('span')
-        email.textContent = pessoas.email
-        li.appendChild(email)
+        let jogador = document.createElement('div')
+        jogador.textContent = pessoas.Jogador
+        li.appendChild(jogador)
+        jogador.id = "jogador"
 
         let deleta = document.createElement('button')
-        deleta.textContent = ""
+        deleta.textContent = "REBAIXAR"
         deleta.id = "delete"
         deleta.onclick = function (evento){  
             evento.preventDefault()
