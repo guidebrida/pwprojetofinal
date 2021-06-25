@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 body{
-    background-color: black;
+    background: linear-gradient(45deg, #02475E, #687980, #F3BDA1, #FEFECC);
+    background-size: 250%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ header{
     color: white;
     height: 20vh;
     margin: 0px;
-    background-color: yellow;
+   /*background-color: yellow;*/
 }
 h1{
     display: flex;
@@ -202,7 +203,15 @@ img {
     height: 15vh;
 }
 #logo2{
-    margin-top: 13px;
-    width: 40vh;
-    height: 15vh;
+    margin-top: 15px;
+    width: 30vh;
+    height: 10vh;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
